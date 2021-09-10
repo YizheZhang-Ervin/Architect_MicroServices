@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DevOps_MicroServices.iml" filepath="$PROJECT_DIR$/.idea/DevOps_MicroServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroService_All/MicroService_All.iml" filepath="$PROJECT_DIR$/MicroService_All/MicroService_All.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroService_All/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/MicroService_All/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroService_All/feign-api/feign-api.iml" filepath="$PROJECT_DIR$/MicroService_All/feign-api/feign-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroService_All/gateway/gateway.iml" filepath="$PROJECT_DIR$/MicroService_All/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroService_All/order-service/order-service.iml" filepath="$PROJECT_DIR$/MicroService_All/order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MicroService_All/user-service/user-service.iml" filepath="$PROJECT_DIR$/MicroService_All/user-service/user-service.iml" />
+    </modules>
+  </component>
+</project>

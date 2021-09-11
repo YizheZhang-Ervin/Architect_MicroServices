@@ -8,8 +8,14 @@
       <sourceFolder url="file://$MODULE_DIR$/MicroService_All/gateway/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MicroService_All/order-service/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MicroService_All/user-service/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MicroServices/order-service/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MicroServices/user-service/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ElasticSearch/hotel-admin/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ElasticSearch/hotel-demo/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/MicroServicesV2/zuul_server/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.3.9.RELEASE" level="project" />
   </component>
 </module>

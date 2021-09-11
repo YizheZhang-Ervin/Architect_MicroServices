@@ -1,0 +1,28 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: itemservice
+  datasource:
+    url: jdbc:mysql://localhost:3306/cache?useSSL=false
+    username: root
+    password: root001
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: localhost
+mybatis-plus:
+  type-aliases-package: pers.ervin.item.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+logging:
+  level:
+    pers.ervin: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+canal:
+  destination: ervin
+  server: localhost:11111

@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/MicroServices/eureka-server" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/MicroService_All/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroServices/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroServices/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroServices/feign-api/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroServices/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroServicesV2/zuul_server/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroServicesV2/pom.xml" />
       </list>
     </option>
   </component>

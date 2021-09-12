@@ -101,8 +101,8 @@ Micro Services Architecture with SpringCloud related components
       - 可视化前端
 9. 分布式日志
     - ElasticSearch + Logstash + Kibana + Beats
-    - localhost:5601
-    - 可视化前端
+        - localhost:5601
+        - 可视化前端
 10.代理
     - Haproxy
     - F5

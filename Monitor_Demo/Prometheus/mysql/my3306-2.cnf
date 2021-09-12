@@ -1,0 +1,2 @@
+[mysqld] user = mysql basedir = /usr/local/mysql datadir = /data/mysql/mysql3306/data log_bin= /data/mysql/mysql3306/binlog/mysql-bin server_id = 18 gtid-mode=on enforce-gtid-consistency=true
+port = 3306 socket = /tmp/mysql3306.sock

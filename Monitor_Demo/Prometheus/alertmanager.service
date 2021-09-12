@@ -1,0 +1,9 @@
+[Unit]
+Description=alertmanager System Documentation=alertmanager System
+
+[Service]
+ExecStart=/usr/local/alertmanager/alertmanager \
+--config.file=/usr/local/alertmanager/alertmanager.yml
+
+[Install]
+WantedBy=multi-user.target

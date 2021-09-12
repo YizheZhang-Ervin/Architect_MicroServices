@@ -1,0 +1,1 @@
+cluster.name: Linux node.name: node-2 path.data: /data/elasticsearch path.logs: /var/log/elasticsearch bootstrap.memory_lock: true network.host: 172.16.0.7,127.0.0.1 http.port: 9200 discovery.zen.ping.unicast.hosts: ["172.16.0.7", "172.16.0.8"] discovery.zen.minimum_master_nodes: 2

@@ -1,0 +1,46 @@
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+      - 172.16.0.9:9093
+rule_files:
+  - rules/*.yml
+
+- job_name: 'host_monitor'
+  static_configs:
+  - targets: ['localhost:9100'] ##新增 9100 端口主机监控
+
+- job_name: 'mysql_monitor'
+  tatic_configs:
+  - targets: ['172.16.0.8:9104']
+
+- job_name: 'mysql_monitor'
+  static_configs:
+  - targets: ['172.16.0.8:9104','localhost:9104']
+- job_name: 'redis_exporter'
+  scrape_interval: 10s
+  static_configs:
+  - targets: ['172.16.0.9:9121']
+- job_name: 'elasticsearch_exporter'
+  scrape_interval: 10s
+  metrics_path: "/_prometheus/metrics"
+  static_configs:
+  - targets: ['172.16.0.5:9114','172.16.0.6:9114','172.16.0.7:9114',]
+- job_name: 'docker'
+  static_configs:
+  - targets: ['172.16.0.8:8080']
+- job_name: 'pushgateway'
+  static_configs:
+  - targets: ['172.16.0.9:9091']
+- job_name: 'node_discovery_by_consul'
+  metrics_path: /metrics
+  scheme: http
+  consul_sd_configs:
+    - server: 172.16.0.9:8500
+      services:
+        - node-exporter
+
+remote_write:
+  - url: "http://172.16.0.8:8086/api/v1/prom/write?db=prometheus"
+remote_read:
+  - url: "http://172.16.0.8:8086/api/v1/prom/read?db=prometheus"

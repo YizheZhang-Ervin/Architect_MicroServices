@@ -24,6 +24,12 @@ Micro Services Architecture with SpringCloud related components
     - SpringCloud Config + Eureka + RabbitMQ
 - Apollo_Demo
     - Apollo
+- Zookeeper_Demo
+  - Zookeeper/CuratorAPI  
+- Dubbo_Demo
+  - Dubbo + Zookeeper  
+- Monitor_Demo
+  - Skywalking + Prometheus/Grafana
 
 ## MicroServices URLs
 
@@ -44,6 +50,8 @@ Micro Services Architecture with SpringCloud related components
     - Apollo:
         - localhost:8080
         - 可视化前端
+    - Zookeeper:
+      - None
 2. 网关
     - SCGateway:
         - localhost:10010

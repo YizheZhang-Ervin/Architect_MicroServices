@@ -1,0 +1,11 @@
+[Unit]
+Description=https://prometheus.io
+
+[Service]
+Restart=on-failure
+ExecStart=/usr/local/prometheus/prometheus
+--storage.tsdb.path=/usr/local/prometheus/data
+--config.file=/usr/local/prometheus/prometheus.yml
+
+[Install]
+WantedBy=multi-user.target

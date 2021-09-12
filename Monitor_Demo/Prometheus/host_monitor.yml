@@ -1,0 +1,11 @@
+groups:
+  - name: node-up
+    rules:
+    - alert: node-up
+      expr: up == 0
+      for: 15s
+      labels:
+        severity: 1
+        team: node
+      annotations:
+        summary: "{{$labels.instance}}Instance has been down for more than 5 minutes"

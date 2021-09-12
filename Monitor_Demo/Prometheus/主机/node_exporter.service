@@ -1,0 +1,1 @@
+[Unit] Description=Prometheus node_exporter [Service] User=nobody ExecStart=/usr/local/node_exporter/node_exporter --log.level=error ExecStop=/usr/bin/killall node_exporter [Install] WantedBy=default.target

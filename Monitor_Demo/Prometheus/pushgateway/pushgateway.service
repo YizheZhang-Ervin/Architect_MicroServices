@@ -1,0 +1,1 @@
+[Unit] Description=prometheus After=network.target [Service] User=prometheus Group=prometheus WorkingDirectory=/usr/local/pushgateway ExecStart=/usr/local/pushgateway/pushgateway \ --web.enable-admin-api \ --persistence.file="pushfile.txt" \ --persistence.interval=10m [Install] WantedBy=multi-user.target

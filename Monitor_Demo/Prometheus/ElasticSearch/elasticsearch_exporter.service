@@ -1,0 +1,1 @@
+[Unit] Description=Elasticsearch stats exporter for Prometheus Documentation=Prometheus exporter for various metrics [Service] ExecStart=/usr/local/elasticsearch_exporter/elasticsearch_exporter --es.uri http://ip:9200 [Install] WantedBy=multi-user.target

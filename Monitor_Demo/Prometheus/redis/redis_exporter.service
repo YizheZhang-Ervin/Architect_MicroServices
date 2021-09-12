@@ -1,0 +1,1 @@
+[Unit] Description=redis_exporter Documentation=https://github.com/oliver006/redis_exporter After=network.target [Service] Type=simple User=prometheus ExecStart=/usr/local/redis_exporter/redis_exporter -redis.addr 172.16.0.9:6379 Restart=on-failure [Install] WantedBy=multi-user.target

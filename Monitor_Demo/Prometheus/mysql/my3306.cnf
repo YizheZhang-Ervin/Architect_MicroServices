@@ -1,0 +1,1 @@
+[mysql] prompt="\u@\h [\d]>" [mysqld] user = mysql basedir = /usr/local/mysql datadir = /data/mysql/mysql3306/data log-error=/data/mysql/mysql3306/data/error_3306.log server_id = 19 port = 3306 log_bin=/data/mysql/mysql3306/binlog/mysql-bin binlog_format=row gtid-mode=on enforce-gtid-consistency=true socket = /tmp/mysql3306.sock[root@docker-2 system]#

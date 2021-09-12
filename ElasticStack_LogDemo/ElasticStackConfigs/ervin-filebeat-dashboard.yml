@@ -1,0 +1,10 @@
+# ./filebeat -e -c ervin-filebeat-dashboard.yml
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /soft/app/*.log
+setup.template.settings:
+  index.number_of_shards: 1
+output.logstash:
+  hosts: ["127.0.0.1:5044"]

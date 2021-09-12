@@ -30,7 +30,8 @@ Micro Services Architecture with SpringCloud related components
   - Dubbo + Zookeeper  
 - Monitor_Demo
   - Skywalking + Prometheus/Grafana
-
+- ElasticStack_LogDemo
+  - ElasticSearch + Logstash + Kibana + Beats
 ## MicroServices URLs
 
 1. 注册中心&配置中心
@@ -44,7 +45,7 @@ Micro Services Architecture with SpringCloud related components
     - Consul:
         - localhost:8500
         - 可视化前端
-    - SCConfig:
+    - SCConfig+SCBus:
         - localhost:10000
         - 可视化前端
     - Apollo:
@@ -70,12 +71,16 @@ Micro Services Architecture with SpringCloud related components
         - None
 5. 链路追踪
     - Sleuth+Zipkin:
-        - localhost:9411
-        - 可视化前端
+      - localhost:9411
+      - 可视化前端
+    - Skywalking:
+      - localhost: 9010
+      - 可视化前端
 6. 消息队列
-    - rabbitMQ:
+    - rabbitMQ+SpringAMQP+SCStream:
         - localhost:5672
         - 可视化前端
+    - Kafka
 7. 分布式缓存&分布式数据库&分布式搜索&分布式事务
     - Redis:
         - None
@@ -84,8 +89,36 @@ Micro Services Architecture with SpringCloud related components
     - Canal:
         - localhost:11111
     - ElasticSearch:
-        - None
+        - locahost:9200
     - Seata:
         - None
-
-  
+8. 度量监控
+    - Prometheus+Grafana
+        - Prometheus: localhost:9090
+        - Grafana: localhost:3000
+        - 可视化前端
+    - Zabbix
+      - 可视化前端
+9. 分布式日志
+    - ElasticSearch + Logstash + Kibana + Beats
+    - localhost:5601
+    - 可视化前端
+10.代理
+    - Haproxy
+    - F5
+    - nginx+LUA
+11.交易路由
+    - Cassandra
+    - TiKV
+10. 报文转换
+    - xml
+    - hession
+    - gsan
+13.开发框架
+    - Dubbo
+    - Spring Cloud + Spring Boot + Spring Security
+14.运维
+    - 自动化编译Jenkins
+    - 打包Docker
+    - 自动化部署Kubernates
+    - 代码检查Arthas

@@ -106,7 +106,7 @@ Micro Services Architecture with SpringCloud related components
 10.代理
     - Haproxy
     - F5
-    - nginx+LUA
+    - Nginx+LUA
 11.交易路由
     - Cassandra
     - TiKV

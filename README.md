@@ -14,8 +14,10 @@ Micro Services Architecture with SpringCloud related components
     - RabbitMQ + SpringAMQP
 - MultiCache_Demo
     - Canal + Redis
-- Redis_Demo
+- Redis_Demo & Redis_Pool_Demo
     - Redis
+- Kafka_Demo
+    - Kafka
 - Seata_Demo
     - Seata + Nacos
 - SCStream_Demo
